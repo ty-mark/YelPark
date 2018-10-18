@@ -2,7 +2,7 @@ var mongoose    = require("mongoose"),
     Campground  = require("./models/campground"),
     Comment     = require("./models/comment");
     
-mongoose.connect('mongodb://localhost:27017/yelpcamp_app', { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/yelpcamp_app', { useNewUrlParser: true });
 
 var data = [
     {

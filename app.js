@@ -10,7 +10,7 @@ var express         = require("express"),
     User            = require("./models/user");
 
 // mongoose.connect('mongodb://localhost:27017/yelpcamp_app', { useNewUrlParser: true });
-mongoose.connect('mongodb://thyang:qy803181@ds029486.mlab.com:29486/yelp_park');
+mongoose.connect('mongodb://thyang:qy803181@ds029486.mlab.com:29486/yelp_park', { useNewUrlParser: true });
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 // __dirname refers to the current directory
