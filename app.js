@@ -9,9 +9,10 @@ var express         = require("express"),
     seedDB          = require("./seeds"),
     User            = require("./models/user");
 
+var url = process.env.DATABASEURL || 'mongodb://localhost:27017/yelpcamp_app';
 // mongoose.connect('mongodb://localhost:27017/yelpcamp_app', { useNewUrlParser: true });
 // mongoose.connect('mongodb://thyang:qy803181@ds029486.mlab.com:29486/yelp_park', { useNewUrlParser: true });
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
+mongoose.connect(url, { useNewUrlParser: true });
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));

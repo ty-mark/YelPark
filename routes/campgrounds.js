@@ -11,7 +11,7 @@ router.get("/", function(req, res){
             req.flash("error", "Park not found");
             res.redirect("back");
         } else {
-            res.render("campgrounds/index", {campgrounds: allCampgrounds});
+            res.render("campgrounds/index", {campgrounds: allCampgrounds, page: 'campgrounds'});
         }
     });
 });
